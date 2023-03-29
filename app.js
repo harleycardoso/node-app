@@ -12,7 +12,7 @@ app.set("view engine","ejs");
 app.use(bodyParser.urlencoded({extends:true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://lista:tTTkT5LL2quOoeef@cluster0.ybnfdtv.mongodb.net/todoListDB");
+mongoose.connect("mongodb+srv://@cluster0.ybnfdtv.mongodb.net/todoListDB");
 
 const itemShema = {
     name: String
